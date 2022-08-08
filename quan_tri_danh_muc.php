@@ -55,6 +55,11 @@
                                     Chỉnh sửa
                                 </button>
                             </a>
+                            <a href="xoa_danh_muc.php?id=<?= $value['id']?>">
+                                <button class="btn btn-danger">
+                                    Xóa danh mục
+                                </button>
+                            </a>
                            
                     </td>
                        
