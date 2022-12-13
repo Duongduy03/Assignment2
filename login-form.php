@@ -13,7 +13,7 @@
         $statement = $connect->prepare($sql);
         $statement->execute();
         $loginUser = $statement->fetch();
-        
+        // $password_hash = password_hash($password,PASSWORD_BCRYPT);
         if($password == ""){
             $errorsPass ='Bắt buộc nhập mật khẩu';
     
@@ -34,7 +34,7 @@
 
 
             else if(!password_verify($password,$loginUser['password'])){
-                $errorsPass = 'Mật khẩu sai!';
+                $errorsPass = 'Mật khẩu sai2!';
                 // 2.3 Đúng thông tin
             }else{
                 // Lưu thông tin vào phiên làm việc để các chỗ khsc đều đọc được

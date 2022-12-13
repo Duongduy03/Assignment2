@@ -89,6 +89,7 @@
                     </td>
                         <td><?= $value['category_id']?>
                     </td>
+                  
                         
                       
                     </tr>
@@ -99,7 +100,7 @@
             <div class="timkiem">
                 <select name="item" id="">
                     <option value="" hidden></option>
-                    <option value="1" >Tất cả</option>
+                   
                     <?php foreach ($categories as $field => $value2) : ?>
                         <option value="<?=$value2['name']?>"><?=$value2['name']?></option>
                         

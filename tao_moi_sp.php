@@ -5,7 +5,7 @@
         $des = $_POST['descripition'];
         $color = $_POST['color'];
         $price = $_POST['price'];
-        $img = $_POST['image_url'];
+        $img = $_FILES['image_url'];
         $category_id = $_POST['category_id'];
      
         
@@ -42,7 +42,7 @@
                     <div class="form-group">
                         <label for="">Tên sản phẩm</label>
                         <input type="text" name="name" class="form-control">
-                    </div>
+                    </div>  
                     <div class="form-group">
                         <label for="">Mô tả</label>
                         <input type="text" name="descripition" class="form-control">
